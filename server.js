@@ -18,8 +18,9 @@ const MIME_TYPES = {
 };
 
 const server = http.createServer((req, res) => {
+    const isRoot = req.url === '/' || req.url === '';
     const safePath = path.normalize(req.url).replace(/^(\.\.[\/\\])+/, '');
-    const filePath = path.join(PUBLIC_DIR, safePath === '/' ? 'index.html' : safePath);
+    const filePath = path.join(PUBLIC_DIR, isRoot ? 'index.html' : safePath);
 
     if (!filePath.startsWith(PUBLIC_DIR)) {
         res.writeHead(403);
