@@ -1,0 +1,9 @@
+{
+  "name": "cute-tank-war",
+  "version": "1.0.0",
+  "description": "A cute tank war game inspired by Battle City",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
