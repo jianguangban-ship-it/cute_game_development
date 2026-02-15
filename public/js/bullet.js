@@ -42,7 +42,7 @@ export class Bullet {
 
         // Glow effect
         const glowSize = 6 + Math.sin(this.glowPhase) * 2;
-        ctx.fillStyle = 'rgba(255, 214, 0, 0.3)';
+        ctx.fillStyle = 'rgba(255, 34, 34, 0.3)';
         ctx.beginPath();
         ctx.arc(cx, cy, glowSize, 0, Math.PI * 2);
         ctx.fill();

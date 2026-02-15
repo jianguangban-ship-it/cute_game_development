@@ -55,13 +55,13 @@ export const PLAYER_SPEED = 120;
 export const ENEMY_SPEED_WANDERER = 90;
 export const ENEMY_SPEED_CHASER = 120;
 export const ENEMY_SPEED_HEAVY = 75;
-export const BULLET_SPEED = 300;
+export const BULLET_SPEED = 450;
 
 // Combat
-export const SHOOT_COOLDOWN = 500;
+export const SHOOT_COOLDOWN = 200;
 export const SHOOT_COOLDOWN_RAPID = 250;
-export const BULLET_SIZE = 8;
-export const MAX_PLAYER_BULLETS = 1;
+export const BULLET_SIZE = 14;
+export const MAX_PLAYER_BULLETS = 5;
 export const MAX_PLAYER_BULLETS_RAPID = 2;
 
 // Player
@@ -123,8 +123,8 @@ export const COLORS = {
     ENEMY_CHASER: '#FFB74D',
     ENEMY_HEAVY: '#CE93D8',
 
-    BULLET: '#FFD600',
-    BULLET_GLOW: '#FFFFFF',
+    BULLET: '#FF2222',
+    BULLET_GLOW: '#FF6666',
 
     EXPLOSION_INNER: '#FFFFFF',
     EXPLOSION_MID: '#FFEB3B',

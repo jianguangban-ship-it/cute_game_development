@@ -41,7 +41,7 @@ export class InputManager {
     get down() { return this.isDown('ArrowDown') || this.isDown('KeyS'); }
     get left() { return this.isDown('ArrowLeft') || this.isDown('KeyA'); }
     get right() { return this.isDown('ArrowRight') || this.isDown('KeyD'); }
-    get shoot() { return this.wasPressed('Space'); }
+    get shoot() { return this.isDown('Space'); }
     get pause() { return this.wasPressed('Escape'); }
     get confirm() { return this.wasPressed('Enter'); }
     get mute() { return this.wasPressed('KeyM'); }
